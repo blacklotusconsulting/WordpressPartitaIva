@@ -3,7 +3,7 @@ Contributors: blacklotusconsulting
 Tags: fattura-elettronica,fattura,elettronica,woocommerce,woocommerce-fattura-elettronica,codice-fiscale,pec,iva,codice-univoco,codice-cliente
 Requires at least: 5.1
 Requires Woocommerce
-Tested up to: 5.5
+Tested up to: 6.0.1
 Requires PHP: 7.0
 Stable tag: 1.2
 Version:     1.2

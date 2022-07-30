@@ -529,6 +529,8 @@ if ( ! class_exists( 'WordPress_Partita_IVA' ) ) {
     }
         /*    Aggiungo campi custom nel riepilogo ordine
         */
+    /*    TODO Escape variables
+        */
         function wp_partita_iva_add_customer_billing_fields_in_admin_order_meta( $order )
         {
             $settings = get_option('wp_partita_iva_settings', array());
@@ -538,10 +540,11 @@ if ( ! class_exists( 'WordPress_Partita_IVA' ) ) {
             $abilitazione_pec = $settings['basic']['field-pec'];
             $orderid = $order->get_id();
             if ($abilitazione_pi == 1) {
+                $client_vat_label='';
                 $billing_vat = get_user_meta($order->get_user_id(), 'billing_vat', true);
                 $order_billing_vat = get_post_meta($orderid, '_billing_vat', true);
                 $client_vat_label = '<p><strong>' . __('Partita IVA', 'woocommerce') . ' </strong><br>';
-                $client_vat_label .= ($billing_vat) ? '(From Billing Address)' . $billing_vat : ($order_billing_vat) ? '(From Order Note)' . $order_billing_vat : '0';
+                $client_vat_label.= ($billing_vat) ? '(From Billing Address)' . $billing_vat : ($order_billing_vat) ? '(From Order Note)' . $order_billing_vat : '0';
                 echo $client_vat_label . '</p>';
             }
             if ($abilitazione_cf == 1) {

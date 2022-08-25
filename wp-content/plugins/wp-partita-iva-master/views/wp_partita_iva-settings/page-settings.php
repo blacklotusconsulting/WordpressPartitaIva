@@ -7,7 +7,7 @@
 		<?php do_settings_sections( 'wp_partita_iva_settings' ); ?>
 
 		<p class="submit">
-			<input type="submit" name="submit" id="submit" class="button-primary" value="<?php esc_attr_e( 'Save Changes' ); ?>" />
+			<input type="submit" name="submit" id="submit" class="button-primary" value="<?php esc_html_e( 'Save Changes' ); ?>" />
 		</p>
 	</form>
 </div> <!-- .wrap -->

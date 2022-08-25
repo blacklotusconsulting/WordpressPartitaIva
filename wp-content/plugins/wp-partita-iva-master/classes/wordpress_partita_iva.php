@@ -12,7 +12,7 @@ if ( ! class_exists( 'WordPress_Partita_IVA' ) ) {
 		protected static $writeable_properties = array();
 		protected $modules;
 
-        const VERSION = '1.1';
+        const VERSION = '1.2';
         const PREFIX     = 'wp_partita_iva_';
         const AB_CF = '0';
         const AB_PI = '0';
@@ -543,36 +543,59 @@ if ( ! class_exists( 'WordPress_Partita_IVA' ) ) {
                 $client_vat_label='';
                 $billing_vat = get_user_meta($order->get_user_id(), 'billing_vat', true);
                 $order_billing_vat = get_post_meta($orderid, '_billing_vat', true);
-                $client_vat_label = '<p><strong>' . __('Partita IVA', 'woocommerce') . ' </strong><br>';
-                $client_vat_label.= ($billing_vat) ? '(From Billing Address)' . $billing_vat : ($order_billing_vat) ? '(From Order Note)' . $order_billing_vat : '0';
-                echo $client_vat_label . '</p>';
+                $client_vat_label =__('Partita IVA', 'woocommerce') ;
+                $client_vat_label.= (' '. $billing_vat) ? ' ' . $billing_vat : (' '. $order_billing_vat) ? ' ' . $order_billing_vat : '0';
+                echo esc_html_e($client_vat_label);
             }
+            ?>
+            <br>
+            <?php
             if ($abilitazione_cf == 1) {
                 $billing_cf = get_user_meta($order->get_user_id(), 'billing_cf', true);
                 $order_billing_cf = get_post_meta($orderid, '_billing_cf', true);
-                $billing_cf_label = '<p><strong>' . __('Codice Fiscale', 'woocommerce') . '</strong><br>';
-                $billing_cf_label .= ($billing_cf) ? $billing_cf : ($order_billing_cf) ? $order_billing_cf : 'no';
-                echo $billing_cf_label . '</p>';
+                $billing_cf_label = __('Codice Fiscale: ', 'woocommerce');
+                $billing_cf_label .= (' '. $billing_cf) ? $billing_cf : (' '. $order_billing_cf) ? $order_billing_cf : 'no';
+                echo esc_html_e($billing_cf_label);
             }
+            ?>
+            <br>
+            <?php
             if ($abilitazione_nin == 1) {
                 $billing_nin = get_user_meta($order->get_user_id(), 'billing_nin', true);
                 $order_billing_nin = get_post_meta($orderid, '_billing_nin', true);
-                $billing_nin_label = '<p><strong>' . __('Codice Univoco', 'woocommerce') . '</strong><br>';
-                $billing_nin_label .= ($billing_nin) ? $billing_nin : ($order_billing_nin) ? $order_billing_nin : 'no';
-                echo $billing_nin_label . '</p>';
+                $billing_nin_label =__('Codice Univoco: ', 'woocommerce');
+                $billing_nin_label .= (' '. $billing_nin) ? $billing_nin : (' '. $order_billing_nin) ? $order_billing_nin : 'no';
+                echo esc_html_e($billing_nin_label);
             }
+            ?>
+            <br>
+            <?php
             if ($abilitazione_pec == 1) {
                 $billing_pec = get_user_meta($order->get_user_id(), 'billing_pec', true);
                 $order_billing_pec = get_post_meta($orderid, '_billing_pec', true);
-                $billing_pec_label = '<p><strong>' . __('Indirizzo PEC', 'woocommerce') . '</strong><br>';
-                $billing_pec_label .= ($billing_pec) ? $billing_pec : ($order_billing_pec) ? $order_billing_pec : 'no';
-                echo $billing_pec_label . '</p>';
+                $billing_pec_label =__('Indirizzo PEC: ', 'woocommerce') ;
+                $billing_pec_label .= (' '. $billing_pec) ? $billing_pec : (' '. $order_billing_pec) ? $order_billing_pec : 'no';
+                echo esc_html_e($billing_pec_label);
             }
+            ?>
+            <br>
+            <?php
             $billing_fatt = get_user_meta($order->get_user_id(), 'billing_fatt', true);
+
             $order_billing_fatt = get_post_meta($orderid, '_billing_fatt', true);
-            $billing_fatt_label = '<p><strong>' . __('Necessaria Fattura', 'woocommerce') . '</strong><br>';
-            $billing_fatt_label .= ($billing_fatt) ? $billing_fatt : ($order_billing_fatt) ? $order_billing_fatt : 'no';
-            echo $billing_fatt_label . '</p>';
+            if($order_billing_fatt!=''){
+                if($order_billing_fatt==1){
+                    $billing_fatt='Si';
+                }
+                else{$billing_fatt='No';
+                }
+            }
+            else{$billing_fatt='No';
+            }
+
+            $billing_fatt_label =__('Necessaria Fattura: ', 'woocommerce') ;
+            $billing_fatt_label .= $billing_fatt;
+            echo esc_html_e( $billing_fatt_label);
     }
     add_action( 'woocommerce_admin_order_data_after_billing_address', 'wp_partita_iva_add_customer_billing_fields_in_admin_order_meta', 10, 1 );
 

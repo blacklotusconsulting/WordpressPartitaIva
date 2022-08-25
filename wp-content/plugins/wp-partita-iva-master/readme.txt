@@ -12,6 +12,8 @@ License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Plugin Name: Partita Iva per Fattura Elettronica
 Plugin URI:  https://github.com/blacklotusconsulting/WordpressPartitaIva
+Donate Link: https://www.paypal.com/donate/?business=PZXF7XXABDC7C&no_recurring=0&currency_code=EUR
+
 Description:
 
 Partita Iva per Fattura Elettronica adds to the Woocommerce standard checkout form some custom fields(VAT Number, Fiscal Code, NIN Code and PEC email address) required for the italian market.
@@ -30,3 +32,27 @@ Con questa plugin in versione gratuita vengono aggiunte al form di pagamento sta
 6) Pannello di controllo per abilitare/disabilitare la visibilità e l'obbligatorietà dei campi nel form di pagamento.
 
 Per il corretto funzionamento è necessaria l'installazione di Woocommerce.
+
+== Frequently Asked Questions ==
+Does this plugin require Woocommerce?
+Yes, it requires Woocommerce.
+
+Is this plugin FREE?
+Yes, it is free. If you want you can buy me a chocolate cake donating at this link https://www.paypal.com/donate/?business=PZXF7XXABDC7C&no_recurring=0&currency_code=EUR
+
+Does this plugin create a PDF of the invoice?
+Nope. It just save VAT Number, Fiscal Code, NIN Code and PEC email address as order meta data.
+
+== Changelog ==
+1.2.1 Added more information on the readme file, Plugin Banner and Plugin Icon.
+1.2 Fix incorrect Stable Tag. Variables and options escaped when echo'd
+1.1 Fixed code to Sanitize Escape and Validate data.
+1.0 First release.
+
+== Upgrade Notice ==
+No upgrade notice so far
+
+== Screenshots ==
+1.Form Custom Fields in Order Page
+2.Settings to enable/disable and make custom Fields mandatory in Wordpress settings page
+3. Admin order page with saved Custom Fields as order meta

@@ -1,6 +1,6 @@
 ===  Partita Iva per Fattura Elettronica  ===
 Contributors: blacklotusconsulting
-Tags: fattura-elettronica,fattura,elettronica,woocommerce,woocommerce-fattura-elettronica,codice-fiscale,pec,iva,codice-univoco,codice-cliente,piva,fatturazione-elettronica,fattura-woocommerce
+Tags: fattura-elettronica,fattura,elettronica,woocommerce,woocommerce-fattura-elettronica,codice-fiscale,pec,iva,codice-univoco,codice-cliente,piva,fatturazione-elettronica,fattura-woocommerce,woocommerce-vat,vat-number,vat-number-woocommerce
 Requires at least: 5.1
 Tested up to: 6.0.1
 Requires PHP: 7.0

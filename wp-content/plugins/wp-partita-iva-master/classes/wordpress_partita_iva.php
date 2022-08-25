@@ -529,7 +529,7 @@ if ( ! class_exists( 'WordPress_Partita_IVA' ) ) {
     }
         /*    Aggiungo campi custom nel riepilogo ordine
         */
-    /*    TODO Escape variables
+    /*    DONE Escape variables
         */
         function wp_partita_iva_add_customer_billing_fields_in_admin_order_meta( $order )
         {
@@ -544,7 +544,7 @@ if ( ! class_exists( 'WordPress_Partita_IVA' ) ) {
                 $billing_vat = get_user_meta($order->get_user_id(), 'billing_vat', true);
                 $order_billing_vat = get_post_meta($orderid, '_billing_vat', true);
                 $client_vat_label =__('Partita IVA', 'woocommerce') ;
-                $client_vat_label.= (' '. $billing_vat) ? ' ' . $billing_vat : (' '. $order_billing_vat) ? ' ' . $order_billing_vat : '0';
+                $client_vat_label.= (' ' . $billing_vat) ? ' ' . $billing_vat : ((' ' . $order_billing_vat) ? ' ' . $order_billing_vat : '0');
                 echo esc_html_e($client_vat_label);
             }
             ?>
@@ -554,7 +554,7 @@ if ( ! class_exists( 'WordPress_Partita_IVA' ) ) {
                 $billing_cf = get_user_meta($order->get_user_id(), 'billing_cf', true);
                 $order_billing_cf = get_post_meta($orderid, '_billing_cf', true);
                 $billing_cf_label = __('Codice Fiscale: ', 'woocommerce');
-                $billing_cf_label .= (' '. $billing_cf) ? $billing_cf : (' '. $order_billing_cf) ? $order_billing_cf : 'no';
+                $billing_cf_label .= (' ' . $billing_cf) ? $billing_cf : ((' ' . $order_billing_cf) ? $order_billing_cf : 'no');
                 echo esc_html_e($billing_cf_label);
             }
             ?>
@@ -564,7 +564,7 @@ if ( ! class_exists( 'WordPress_Partita_IVA' ) ) {
                 $billing_nin = get_user_meta($order->get_user_id(), 'billing_nin', true);
                 $order_billing_nin = get_post_meta($orderid, '_billing_nin', true);
                 $billing_nin_label =__('Codice Univoco: ', 'woocommerce');
-                $billing_nin_label .= (' '. $billing_nin) ? $billing_nin : (' '. $order_billing_nin) ? $order_billing_nin : 'no';
+                $billing_nin_label .= (' ' . $billing_nin) ? $billing_nin : ((' ' . $order_billing_nin) ? $order_billing_nin : 'no');
                 echo esc_html_e($billing_nin_label);
             }
             ?>
@@ -574,7 +574,7 @@ if ( ! class_exists( 'WordPress_Partita_IVA' ) ) {
                 $billing_pec = get_user_meta($order->get_user_id(), 'billing_pec', true);
                 $order_billing_pec = get_post_meta($orderid, '_billing_pec', true);
                 $billing_pec_label =__('Indirizzo PEC: ', 'woocommerce') ;
-                $billing_pec_label .= (' '. $billing_pec) ? $billing_pec : (' '. $order_billing_pec) ? $order_billing_pec : 'no';
+                $billing_pec_label .= (' ' . $billing_pec) ? $billing_pec : ((' ' . $order_billing_pec) ? $order_billing_pec : 'no');
                 echo esc_html_e($billing_pec_label);
             }
             ?>

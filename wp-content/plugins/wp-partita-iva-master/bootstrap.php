@@ -46,6 +46,8 @@ Does this plugin create a PDF of the invoice?
 Nope. It just save VAT Number, Fiscal Code, NIN Code and PEC email address as order meta data.
 
 == Changelog ==
+
+1.2.2 Added support for Wordpress 6.0.2. and Woocommerce 6.8.2
 1.2.1 Added more information on the readme file, Plugin Banner and Plugin Icon.
 1.2 Fix incorrect Stable Tag. Variables and options escaped when echo'd
 1.1 Fixed code to Sanitize Escape and Validate data.

@@ -4,10 +4,10 @@
 Contributors: blacklotusconsulting
 Tags: fattura-elettronica,fattura,elettronica,woocommerce,woocommerce-fattura-elettronica,codice-fiscale,pec,iva,codice-univoco,codice-cliente,piva,fatturazione-elettronica,fattura-woocommerce,woocommerce-vat,vat-number,vat-number-woocommerce
 Requires at least: 5.1
-Tested up to: 6.0.1
-Requires PHP: 7.0
-Stable tag: 1.2.1
-Version:     1.2.1
+Tested up to: 6.0.2
+Requires PHP: 7.1
+Stable tag: 1.2.2
+Version:     1.2.2
 Author:      Alessandro Romani
 Author URI:  https://www.blacklotus.eu
 License: GPL2
@@ -58,7 +58,6 @@ No upgrade notice so far
 1.Form Custom Fields in Order Page
 2.Settings to enable/disable and make custom Fields mandatory in Wordpress settings page
 3. Admin order page with saved Custom Fields as order meta
-
 */
 
 if ( ! defined( 'ABSPATH' ) ) {

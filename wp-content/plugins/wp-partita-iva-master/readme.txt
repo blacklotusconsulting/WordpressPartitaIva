@@ -2,10 +2,10 @@
 Contributors: blacklotusconsulting
 Tags: fattura-elettronica,fattura,elettronica,woocommerce,woocommerce-fattura-elettronica,codice-fiscale,pec,iva,codice-univoco,codice-cliente,piva,fatturazione-elettronica,fattura-woocommerce,woocommerce-vat,vat-number,vat-number-woocommerce
 Requires at least: 5.1
-Tested up to: 6.0.2
+Tested up to: 6.2
 Requires PHP: 7.1
-Stable tag: 1.2.2
-Version:     1.2.2
+Stable tag: 1.2.3
+Version:     1.2.3
 Author:      Alessandro Romani
 Author URI:  https://www.blacklotus.eu
 License: GPL2
@@ -38,12 +38,13 @@ Does this plugin require Woocommerce?
 Yes, it requires Woocommerce.
 
 Is this plugin FREE?
-Yes, it is free. If you want you can buy me a chocolate cake donating at this link https://www.paypal.com/donate/?business=PZXF7XXABDC7C&no_recurring=0&currency_code=EUR
+Yes, it is free.
 
 Does this plugin create a PDF of the invoice?
 Nope. It just save VAT Number, Fiscal Code, NIN Code and PEC email address as order meta data.
 
 == Changelog ==
+1.2.3 Added support for Wordpress 6.2 and Woocommerce 7.5.1
 1.2.2 Added support for Wordpress 6.0.2. and Woocommerce 6.8.2
 1.2.1 Added more information on the readme file, Plugin Banner and Plugin Icon.
 1.2 Fix incorrect Stable Tag. Variables and options escaped when echo'd

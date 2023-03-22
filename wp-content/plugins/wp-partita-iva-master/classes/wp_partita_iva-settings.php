@@ -350,10 +350,8 @@ if ( ! class_exists( 'wp_partita_iva_Settings' ) ) {
                     // Do any extra processing here
                     break;
                 case 'wp_partita_iva_field-nin':
-                    // Do any extra processing here
                     break;
                 case 'wp_partita_iva_field-pec':
-                    // Do any extra processing here
                     break;
             }
 

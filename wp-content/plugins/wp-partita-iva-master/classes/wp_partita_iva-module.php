@@ -95,7 +95,7 @@ if ( ! class_exists( 'wp_partita_iva_Module' ) ) {
 
 			$template_path = locate_template( basename( $default_template_path ) );
 			if ( ! $template_path ) {
-				$template_path = dirname( __DIR__ ) . '/views/' . $default_template_path;
+				$template_path = dirname(__DIR__) . '/views/' . $default_template_path;
 			}
 			$template_path = apply_filters( 'wp_partita_iva_template_path', $template_path );
 

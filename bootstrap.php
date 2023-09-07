@@ -6,8 +6,8 @@ Tags: fattura-elettronica,fattura,elettronica,woocommerce,woocommerce-fattura-el
 Requires at least: 5.1
 Tested up to: 6.2
 Requires PHP: 7.1
-Stable tag: 1.2.3
-Version:     1.2.3
+Stable tag: 1.2.4
+Version:     1.2.4
 Author:      Alessandro Romani
 Author URI:  https://www.blacklotus.eu
 License: GPL2
@@ -46,6 +46,7 @@ Does this plugin create a PDF of the invoice?
 Nope. It just save VAT Number, Fiscal Code, NIN Code and PEC email address as order meta data.
 
 == Changelog ==
+1.2.4 Added support for Wordpress 6.3.1 and Woocommerce 8.0.3
 1.2.3 Added support for Wordpress 6.2 and Woocommerce 7.5.1
 1.2.2 Added support for Wordpress 6.0.2. and Woocommerce 6.8.2
 1.2.1 Added more information on the readme file, Plugin Banner and Plugin Icon.

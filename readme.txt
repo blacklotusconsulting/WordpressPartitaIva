@@ -4,8 +4,8 @@ Tags: fattura-elettronica,fattura,elettronica,woocommerce,woocommerce-fattura-el
 Requires at least: 5.1
 Tested up to: 6.3.1
 Requires PHP: 7.1
-Stable tag: 1.2.5
-Version:     1.2.5
+Stable tag: 1.3.0
+Version:     1.3.0
 Author:      Alessandro Romani
 Author URI:  https://www.blacklotus.eu
 License: GPL2
@@ -14,9 +14,7 @@ Plugin Name: Partita Iva per Fattura Elettronica
 Plugin URI:  https://github.com/blacklotusconsulting/WordpressPartitaIva
 Donate Link: https://www.paypal.com/donate/?business=PZXF7XXABDC7C&no_recurring=0&currency_code=EUR
 
-Description:
-
-Partita Iva per Fattura Elettronica adds to the Woocommerce standard checkout form some custom fields(VAT Number, Fiscal Code, NIN Code and PEC email address) required for the italian market.
+Description: Partita Iva per Fattura Elettronica adds to the Woocommerce standard checkout form some custom fields(VAT Number, Fiscal Code, NIN Code and PEC email address) required for the italian market.
 It is possible to choose the fields that will be displayed in the checkout form and set as mandatory field for each field.
 Data are stored as Woocommerce Order Meta.
 Requires Woocommerce
@@ -44,6 +42,7 @@ Does this plugin create a PDF of the invoice?
 Nope. It just save VAT Number, Fiscal Code, NIN Code and PEC email address as order meta data.
 
 == Changelog ==
+1.3.0 Added support for Woocommerce 8.2.0. Fixed issue If the user has already requested the invoice in the past, the user's preference is not respected, so the "billing_fatt" checkbox is not pre-selected. Admin can modify fields in order page.
 1.2.5 Added support for Wordpress 6.3.1 and Woocommerce 8.0.3
 1.2.4 Added support for Wordpress 6.3 and Woocommerce 8.0.3
 1.2.3 Added support for Wordpress 6.2 and Woocommerce 7.5.1

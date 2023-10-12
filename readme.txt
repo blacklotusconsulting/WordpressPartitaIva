@@ -28,6 +28,8 @@ Con questa plugin in versione gratuita vengono aggiunte al form di pagamento sta
 4) Inserimento del campo Codice Univoco Iva nel form di pagamento di Woocommerce con salvataggio del dato nei metadati dell'ordine
 5) Inserimento del campo Checkbox per la richiesta di fattura elettronica. Se valorizzato in fase di acquisto verrà inviata una mail all'indirizzo dell'amministratore del sito con i dettagli per la fatturazione elettronica.
 6) Pannello di controllo per abilitare/disabilitare la visibilità e l'obbligatorietà dei campi nel form di pagamento.
+7) Modificare i campi custom della fattura elettronica nella pagina dell'ordine
+8) Dalla versione 1.3.0 è stato inserito un radio button per selezionalre il tipo di cliente (Privato o Azienda) che rende obbligatorio il campo CF/P.IVA a seconda della selezione.
 
 Per il corretto funzionamento è necessaria l'installazione di Woocommerce.
 
@@ -42,7 +44,7 @@ Does this plugin create a PDF of the invoice?
 Nope. It just save VAT Number, Fiscal Code, NIN Code and PEC email address as order meta data.
 
 == Changelog ==
-1.3.0 Added support for Woocommerce 8.2.0. Fixed issue If the user has already requested the invoice in the past, the user's preference is not respected, so the "billing_fatt" checkbox is not pre-selected. Admin can modify fields in order page.
+1.3.0 Added support for Woocommerce 8.2.0. Fixed issue If the user has already requested the invoice in the past, the user's preference is not respected, so the "billing_fatt" checkbox is not pre-selected. Admin can modify fields in order page. Added radio button field to choose between private and Business Client, with required field change based on selection.
 1.2.5 Added support for Wordpress 6.3.1 and Woocommerce 8.0.3
 1.2.4 Added support for Wordpress 6.3 and Woocommerce 8.0.3
 1.2.3 Added support for Wordpress 6.2 and Woocommerce 7.5.1

@@ -7,7 +7,7 @@ Requires at least: 5.1
 Tested up to: 6.3.1
 Requires PHP: 7.1
 Stable tag: 1.3.0
-Version:     1.3.0
+Version: 1.3.0
 Author:      Alessandro Romani
 Author URI:  https://www.blacklotus.eu
 License: GPL2

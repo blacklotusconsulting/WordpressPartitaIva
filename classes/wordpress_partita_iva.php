@@ -542,7 +542,7 @@ if ( ! class_exists( 'WordPress_Partita_IVA' ) ) {
 
 
         /*    Valido le modifiche sui campi custom effettuate nel checkout dell'utente.
-        *     Almeno uno dei due campi deve essere compilato.
+        Almeno uno dei due campi deve essere compilato.
         */
         function wp_partita_iva_validate_customer_billing_fields_in_checkout()
         {
@@ -558,6 +558,7 @@ if ( ! class_exists( 'WordPress_Partita_IVA' ) ) {
         }
 
     // Reinserting custom billing state and post code checkout fields
+    /*
     add_filter('woocommerce_default_address_fields', 'wp_partita_iva_override_default_address_fields');
     function wp_partita_iva_override_default_address_fields($address_fields)
     {
@@ -569,7 +570,7 @@ if ( ! class_exists( 'WordPress_Partita_IVA' ) ) {
         $address_fields['billing_state']['placeholder'] = __('State', 'woocommerce');
 
         return $address_fields;
-    }
+    }*/
         /*    Aggiungo campi custom nel riepilogo ordine
         */
     /*    DONE Escape variables

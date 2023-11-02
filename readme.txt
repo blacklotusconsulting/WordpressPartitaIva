@@ -2,11 +2,11 @@
 Contributors: blacklotusconsulting
 Tags: fattura-elettronica,fattura,elettronica,woocommerce,woocommerce-fattura-elettronica,codice-fiscale,pec,iva,codice-univoco,codice-cliente,piva,fatturazione-elettronica,fattura-woocommerce,woocommerce-vat,vat-number,vat-number-woocommerce
 Requires at least: 5.1
-Tested up to: 6.3.1
+Tested up to: 6.3.2
 Requires PHP: 7.1
-Stable tag: 1.3.0
-Version:     1.3.0
-Author:      Alessandro Romani
+Stable tag: 1.3.1
+Version: 1.3.1
+Author: Alessandro Romani
 Author URI:  https://www.blacklotus.eu
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -44,6 +44,7 @@ Does this plugin create a PDF of the invoice?
 Nope. It just save VAT Number, Fiscal Code, NIN Code and PEC email address as order meta data.
 
 == Changelog ==
+1.3.1 Added support for Wordpress 6.3.2 and Woocommerce 8.2.1 Fixed double State/Province field in Woocommerce form. Now is displayed just the standard State field.
 1.3.0 Added support for Woocommerce 8.2.0. Fixed issue If the user has already requested the invoice in the past, the user's preference is not respected, so the "billing_fatt" checkbox is not pre-selected. Admin can modify fields in order page. Added radio button field to choose between private and Business Client, with required field change based on selection.
 1.2.5 Added support for Wordpress 6.3.1 and Woocommerce 8.0.3
 1.2.4 Added support for Wordpress 6.3 and Woocommerce 8.0.3
